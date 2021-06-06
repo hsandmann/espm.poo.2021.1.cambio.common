@@ -1,12 +1,13 @@
 package br.espm.poo.cambio.common.datatype;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Cotacao {
 
     private String id;
     private Moeda moeda;
-    private Double valor;
+    private BigDecimal valor;
     private Date data;
 
     public String getId() {
@@ -17,7 +18,7 @@ public class Cotacao {
         return moeda;
     }
 
-    public Double getValor() {
+    public BigDecimal getValor() {
         return valor;
     }
 
@@ -33,7 +34,7 @@ public class Cotacao {
         this.moeda = moeda;
     }
 
-    public void setValor(Double valor) {
+    public void setValor(BigDecimal valor) {
         this.valor = valor;
     }
 
