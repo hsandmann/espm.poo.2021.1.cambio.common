@@ -13,10 +13,10 @@ public interface CambioController {
     @GetMapping("/moedas")
     List<Moeda> moedas();
 
-    @GetMapping("/cotacao/{id}")
+    @GetMapping("/cotacoes/{id}")
     Cotacao cotacao(String id);
 
-    @GetMapping("/cotacao/{moeda}")
+    @GetMapping("/cotacoes/{moeda}")
     List<Cotacao> cotacoes(String moeda);
 
 }
