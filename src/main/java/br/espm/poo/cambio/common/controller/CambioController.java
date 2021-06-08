@@ -15,7 +15,7 @@ public interface CambioController {
     List<Moeda> moedas();
 
     @GetMapping("/moedas/{simbolo}")
-    List<Moeda> moedas(String simbolo);
+    Moeda moedas(String simbolo);
 
     @GetMapping("/cotacoes/{id}")
     Cotacao cotacao(String id);
